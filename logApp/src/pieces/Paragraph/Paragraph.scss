@@ -1,0 +1,11 @@
+@use '../../styles/variables';
+
+.Paragraph {
+  font-size: 1em;
+  line-height: 1.6;
+  color: variables.$primary-color;
+  margin: 2em;
+  margin-bottom: 1em;
+  width: 81%;
+  text-align: justify;
+}

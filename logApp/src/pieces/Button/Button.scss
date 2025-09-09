@@ -1,0 +1,16 @@
+.Button {
+  margin: 0 2em;
+  background: #0c6ac7;
+  color: white;
+  padding: 1em;
+  max-width: 29em;
+  width: 50%;
+  border: none;
+  border-radius: 1em;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background: #0d70cc;
+  }
+}
