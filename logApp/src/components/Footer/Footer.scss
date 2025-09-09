@@ -1,9 +1,9 @@
 @use '../../styles/mixin';
 
 .Footer {
-  @include mixin.flex-spacearound;
+    @include mixin.flex-nospaceabove;
   padding: 0.5rem 1rem;
-  box-shadow: 0 2px 8px rgb(4, 21, 65);
+  box-shadow: 0 0.2em 0.8em rgb(4, 21, 65);
   background-color: rgb(4, 21, 65);
   color: #eee;
   border-radius: 0em 0em 1em 1em;
@@ -17,6 +17,7 @@
     width: 30em;
     display: block;
     padding: 0.1em;
+    margin-top: 0;
 
     h3 {
       margin-left: 1em;

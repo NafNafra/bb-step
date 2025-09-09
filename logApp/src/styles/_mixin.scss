@@ -4,8 +4,13 @@
   align-items: center;
 }
 
-@mixin flex-spacearound{
+@mixin flex-spacearound {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-nospaceabove {
+  display: flex;
   justify-content: space-between;
 }
