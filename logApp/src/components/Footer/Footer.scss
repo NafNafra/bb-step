@@ -1,0 +1,41 @@
+@use '../../styles/mixin';
+
+.Footer {
+  @include mixin.flex-spacearound;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgb(4, 21, 65);
+  background-color: rgb(4, 21, 65);
+  color: #eee;
+  border-radius: 0em 0em 1em 1em;
+
+  .logo {
+    @include mixin.flex-spacearound;
+    width: 53%;
+  }
+
+  div {
+    width: 30em;
+    display: block;
+    padding: 0.1em;
+
+    h3 {
+      margin-left: 1em;
+    }
+
+    ul {
+      width: 100%;
+
+      li {
+        margin: 0;
+      }
+
+    }
+
+  }
+
+  img {
+    width: 2em;
+    height: 2em;
+  }
+
+}

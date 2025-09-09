@@ -5,10 +5,10 @@ body {
   font-family: variables.$font-stack;
   margin: 0;
   padding: 0;
-}
 
-.container {
-  @include mixin.flex-center;
-  height: 100vh;
-  background: variables.$primary-color;
+  .container {
+    @include mixin.flex-center;
+    height: 100vh;
+    background: variables.$primary-color;
+  }
 }

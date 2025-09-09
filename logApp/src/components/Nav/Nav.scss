@@ -1,0 +1,46 @@
+@use '../../styles/mixin';
+
+.Nav {
+  @include mixin.flex-spacearound;
+  padding: 1rem 2rem;
+  padding-bottom: 0em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  border-radius: 1em 1em 0em 0em;
+  height: 3em;
+  top: 0;
+
+  .logo {
+    @include mixin.flex-spacearound;
+    width: 13%;
+  }
+
+  ul {
+    @include mixin.flex-spacearound;
+    width: 50%;
+
+    li {
+      color: rgba(45, 116, 209, 1.8);
+      display: inline;
+      margin: 0 2%;
+
+      a {
+        color: #002;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  .profile {
+    @include mixin.flex-spacearound;
+    width: 15%;
+
+  }
+
+  img {
+    width: 2em;
+    height: 2em;
+  }
+
+}
