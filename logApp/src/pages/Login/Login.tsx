@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useAuth } from "../../hooks/useLogin";
 import Input from "../../pieces/Input/Input";
-import Button from "../../pieces/Button/Button";
+import Button from "../../pieces/Button/Button-simple";
 import Checkbox from "../../pieces/CheckBox/Checkbox";
 import Paragraph from "../../pieces/Paragraph/Paragraph";
 import Link from "../../pieces/Link/Link";

@@ -1,4 +1,8 @@
-import userImage from "../../assets/user-image.png";
+import fsLogo from "../../assets/images/fs-logo.png";
+import ListIcon from "../../pieces/List";
+import { PhoneIcon } from "../../assets/icons/PhoneIcon";
+import { LocationIcon } from "../../assets/icons/LocationIcon";
+import { EmailIcon } from "../../assets/icons/EmailIcon";
 import './Footer.scss'
 
 export default function Footer() {
@@ -6,7 +10,7 @@ export default function Footer() {
     <footer className="Footer">
       <div>
         <span className="logo">
-          <img src={userImage} />
+          <img src={fsLogo} />
           <h2>Fihary Soft</h2>
         </span>
         <p>
@@ -37,10 +41,23 @@ export default function Footer() {
       </div>
       <div>
         <h3>Contact</h3>
-        <ul>
-          <li> Ivory Atsimo, Fianarantsoa</li>
-          <li> 034 19 863 66</li>
-          <li> fiharysoft@gmail.com</li>
+        <ul className="contact">
+
+
+
+
+          <ListIcon>
+            <LocationIcon />
+            Ivory Atsimo, Fianarantsoa
+          </ListIcon>
+          <ListIcon>
+            <PhoneIcon />
+            <span>034 19 863 66</span>
+          </ListIcon>
+          <ListIcon>
+            <EmailIcon />
+            fiharysoft@gmail.com
+          </ListIcon>
         </ul>
       </div>
     </footer>

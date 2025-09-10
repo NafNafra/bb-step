@@ -1,0 +1,19 @@
+.ListIcon {
+  width: auto;
+  margin: 0;
+  display: flex;
+  border: 0em;
+
+  &:before {
+    content: '';
+    display: flex;
+    background-color: red;
+    width: 0;
+    height: 0;
+    background-image: var(--icon);
+    background-size: contain;
+
+
+    //{ ['--icon' as any]: `url(${icon})` }
+  }
+}

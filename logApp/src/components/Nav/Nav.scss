@@ -2,8 +2,8 @@
 
 .Nav {
   @include mixin.flex-spacearound;
-  padding: 1rem 2rem;
-  padding-bottom: 0em;
+  padding: 0.8rem 2rem;
+  padding-bottom: 0.5em;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   background-color: #fff;
   border-radius: 1em 1em 0em 0em;
@@ -11,7 +11,19 @@
 
   .logo {
     @include mixin.flex-spacearound;
-    width: 13%;
+    width: 14%;
+
+    img {
+      width: 2.5em;
+      height: 2.5em;
+      border-radius: 5em;
+
+    }
+
+    strong {
+      font-size: x-large;
+      font-weight: 700
+    }
   }
 
   ul {
@@ -31,17 +43,20 @@
 
   }
 
-  .profile {
+  .Nav-profile {
+    margin-right: 0.5%;
+    margin-top: -0.05em;
     @include mixin.flex-spacearound;
-    width: 13%;
+    width: 18%;
+    gap: 3%;
 
+    img {
+      width: 2em;
+      height: 2em;
+      border-radius: 5em;
+
+    }
   }
 
-  img {
-    width: 2em;
-    height: 2em;
-    border-radius: 5em;
-
-  }
 
 }

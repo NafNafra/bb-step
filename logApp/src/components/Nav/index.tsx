@@ -1,10 +1,11 @@
 
 import { Link } from "react-router-dom";
-import userImage from "../../assets/user-image.png";
-import fsLogo from "../../assets/fs-logo.png"
+import userImage from "../../assets/images/user-image.png";
+import fsLogo from "../../assets/images/fs-logo.png"
 import './Nav.scss';
 import IconButton from "../../pieces/Button/Button-Icon";
-import IconNotification from "../../assets/notification.jpg"
+import NavButton from "../../pieces/Button/Button-Nav";
+import IconNotification from "../../assets/images/notification.jpg"
  
 
 const Nav: React.FC = () => {
@@ -12,7 +13,7 @@ const Nav: React.FC = () => {
     <nav className="Nav">
       <span className="logo">
         <img src={fsLogo} />
-        <h2>Fihary Soft</h2>
+        <strong><b>Fihary Soft</b></strong>
       </span>
       <ul className="ul">
         <li><Link to="/">Accueil</Link></li>
@@ -21,10 +22,10 @@ const Nav: React.FC = () => {
         <li><Link to="/">Contact</Link></li>
         <li><Link to="/login">Profile</Link></li>
       </ul>
-      <span className="profile">
+      <span className="Nav-profile">
         <IconButton><img src={IconNotification}/></IconButton>
         <img src={userImage} />
-        <button>Inscription</button>
+        <NavButton text="Connexion"/>
       </span>
     </nav>
 

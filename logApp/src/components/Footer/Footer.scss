@@ -1,35 +1,60 @@
 @use '../../styles/mixin';
 
 .Footer {
-    @include mixin.flex-nospaceabove;
+  @include mixin.flex-nospaceabove;
+  gap: 1em;
   padding: 0.5rem 1rem;
+  padding-bottom: 5em;
   box-shadow: 0 0.2em 0.8em rgb(4, 21, 65);
   background-color: rgb(4, 21, 65);
   color: #eee;
   border-radius: 0em 0em 1em 1em;
 
+
   .logo {
     @include mixin.flex-spacearound;
     width: 53%;
+    margin: -0.2em 0em 0em 1em;
+
+    img {
+      width: 2.5em;
+      height: 2.5em;
+      border-radius: 5em;
+    }
+
+    h3 {
+      margin-left: 1em;
+    }
   }
 
   div {
-    width: 30em;
+    width: 100%;
     display: block;
-    padding: 0.1em;
-    margin-top: 0;
+    p {
+      margin-top: 0;
+      margin-left: 1em;
+    }
 
     h3 {
       margin-left: 1em;
     }
 
     ul {
+      margin-top: 1.3em;
       width: 100%;
 
       li {
         margin: 0;
+        padding-top: 0.1em;
+        line-height: 2;
       }
 
+      &.contact {
+        li {
+          margin-bottom: 0.5em;
+          margin-left: -1em;
+        }
+      }
     }
 
   }
