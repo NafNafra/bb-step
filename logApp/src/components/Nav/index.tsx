@@ -6,6 +6,7 @@ import './Nav.scss';
 import IconButton from "../../pieces/Button/Button-Icon";
 import NavButton from "../../pieces/Button/Button-Nav";
 import IconNotification from "../../assets/images/notification.jpg"
+import { NotifyIcon } from "../../assets/icons/NotificyIcon";
  
 
 const Nav: React.FC = () => {
@@ -23,9 +24,9 @@ const Nav: React.FC = () => {
         <li><Link to="/login">Profile</Link></li>
       </ul>
       <span className="Nav-profile">
-        <IconButton><img src={IconNotification}/></IconButton>
+        <IconButton><NotifyIcon/></IconButton>
         <img src={userImage} />
-        <NavButton text="Connexion"/>
+        <NavButton text="Se connecter"/>
       </span>
     </nav>
 
