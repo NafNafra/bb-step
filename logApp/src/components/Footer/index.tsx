@@ -16,7 +16,6 @@ export default function Footer() {
         <p>
           Fihary Soft est une societe qui se specialise dans le domaine informatique depuis 2009. S'engageant a propager le TIC dans tous les domaines
         </p>
-
       </div>
       <div>
         <h3>Formations</h3>
@@ -42,13 +41,9 @@ export default function Footer() {
       <div>
         <h3>Contact</h3>
         <ul className="contact">
-
-
-
-
           <ListIcon>
             <LocationIcon />
-            Ivory Atsimo, Fianarantsoa
+            <span>Ivory Atsimo, Fianarantsoa</span>
           </ListIcon>
           <ListIcon>
             <PhoneIcon />
@@ -56,7 +51,7 @@ export default function Footer() {
           </ListIcon>
           <ListIcon>
             <EmailIcon />
-            fiharysoft@gmail.com
+            <span>fiharysoft@gmail.com</span>
           </ListIcon>
         </ul>
       </div>

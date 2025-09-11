@@ -1,0 +1,17 @@
+.Accueil {
+  display: flex;
+
+  background-image: url('../../assets/images/back3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(0.1em);
+  z-index: -1;
+  border: 0.01em solid white;
+  
+  width: 99.8%;
+  height: 38em;
+  margin-top: 0em;
+
+  
+}

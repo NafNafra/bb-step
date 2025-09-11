@@ -5,9 +5,8 @@ import fsLogo from "../../assets/images/fs-logo.png"
 import './Nav.scss';
 import IconButton from "../../pieces/Button/Button-Icon";
 import NavButton from "../../pieces/Button/Button-Nav";
-import IconNotification from "../../assets/images/notification.jpg"
 import { NotifyIcon } from "../../assets/icons/NotificyIcon";
- 
+
 
 const Nav: React.FC = () => {
   return (
@@ -16,17 +15,17 @@ const Nav: React.FC = () => {
         <img src={fsLogo} />
         <strong><b>Fihary Soft</b></strong>
       </span>
-      <ul className="ul">
-        <li><Link to="/">Accueil</Link></li>
-        <li><Link to="/">Formation</Link></li>
-        <li><Link to="/">A propos</Link></li>
-        <li><Link to="/">Contact</Link></li>
-        <li><Link to="/login">Profile</Link></li>
-      </ul>
+      {/* <ul className="ul"> */}
+      <li><Link to="/">Accueil</Link></li>
+      <li><Link to="/">Formation</Link></li>
+      <li><Link to="/">A propos</Link></li>
+      <li><Link to="/">Contact</Link></li>
+      <li><Link to="/login">Profile</Link></li>
+      {/* </ul> */}
       <span className="Nav-profile">
-        <IconButton><NotifyIcon/></IconButton>
+        <IconButton><NotifyIcon /></IconButton>
         <img src={userImage} />
-        <NavButton text="Se connecter"/>
+        <NavButton text="Se connecter" />
       </span>
     </nav>
 
