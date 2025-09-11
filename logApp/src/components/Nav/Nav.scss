@@ -47,9 +47,10 @@
   .Nav-profile {
     // margin-top: -0.05em;
     @include mixin.flex-spacearound;
-    // max-width: 19%;
-    gap: 5%;
+    width: 16% ;
+    gap: 10%;
     // flex-shrink:2em;
+    // background-color: tr;
 
     img {
       width: 2em;

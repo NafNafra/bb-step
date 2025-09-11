@@ -1,7 +1,7 @@
 @use '../../styles/mixin';
 
 .Footer {
-  @include mixin.flex-nospaceabove;
+  @include mixin.flex-between;
   gap: 1em;
   padding: 0.5rem 1rem;
   padding-bottom: 5em;

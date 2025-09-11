@@ -16,7 +16,7 @@
   justify-content: space-around;
 }
 
-@mixin flex-nospaceabove {
+@mixin flex-between {
   display: flex;
   justify-content: space-between;
 }
