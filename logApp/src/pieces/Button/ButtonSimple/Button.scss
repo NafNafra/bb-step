@@ -1,16 +1,19 @@
 .Button {
+  display: flex;
   margin: 0 auto;
   background: var(--second-btn-color);
+  align-items: center;
   //--primary-btn-color: #53A1DF;
   // --second-btn-color:
   color: white;
   padding: 0.7em 1em;
   max-width: 29em;
-  width: 80%;
+  width: fit-content;
   border: none;
-  border-radius: 1em;
+  border-radius: 0.5em;
   font-size: 1rem;
   font-weight: 500;
+  box-shadow: 0 0 0.4em rgba(89, 93, 99, 0.5);
   cursor: pointer;
 
   &:hover {

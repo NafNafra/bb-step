@@ -21,30 +21,33 @@
 
   .FormationImage {
     content: "";
-    width: 100%;
+    width: 28em;
     height: 17em;
     background-image: url('../../assets/images/info-bureautique.png');
     background-repeat: no-repeat;
     background-size: contain;
 
-    &+.FormationInfo {
+
+  }
+
+  .FormationInfo {
+    display: flex;
+    width: 28em;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 1em;
+    padding-left: 1em;
+
+    li {
+      line-height: 2em;
       display: flex;
-      align-content: center;
       justify-content: flex-start;
-      flex-direction: column;
-      margin-bottom: 1em;
-      padding-left: 1em;
+      // align-items: center;
 
-      li {
-        line-height: 2em;
-        display: flex;
-        align-items: center;
-
-        .icon {
-          margin: 0 0.5em;
-          width: 1.5em;
-          height: 1.5em;
-        }
+      .icon {
+        margin: 0 0.5em;
+        width: 1.5em;
+        height: 1.5em;
       }
     }
   }

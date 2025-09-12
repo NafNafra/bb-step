@@ -1,12 +1,14 @@
 @use '../../styles/mixin';
 
 .Nav {
-  @include mixin.flex-spacearound;
+
+  @include mixin.flex-between;
   align-items: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   background-color: #fff;
   border-radius: 1em 1em 0em 0em;
   height: 4em;
+  padding: 0 2em;
 
   .logo {
     @include mixin.flex-spacearound;
@@ -47,12 +49,10 @@
   }
 
   .Nav-profile {
-    // margin-top: -0.05em;
     @include mixin.flex-spacearound;
-    width: 16%;
-    gap: 10%;
-    // flex-shrink:2em;
-    // background-color: tr;
+    // width: 16%;
+    width: fit-content;
+    gap: 1em;
 
     img {
       width: 2em;
@@ -62,7 +62,6 @@
       &.notify,
       &.ham {
         width: 1.2em;
-        // height: 2em;
         border-radius: 5em;
         margin-left: 0.5em;
       }
@@ -70,29 +69,17 @@
       &.ham {
         display: none;
 
-        @media screen and (max-width: 76em) {display: flex;}
+        @media screen and (max-width: 60em) {
+          display: flex;
+        }
       }
-
-
-
     }
   }
 
-
-  @media screen and (max-width: 76em) {
-
-    img.ham {
-      display: none;
-    }
-
+  @media screen and (max-width: 60em) {
     li {
       display: none;
     }
 
-    .Nav {
-      justify-content: space-between;
-    }
-
-    // background: red;
   }
 }

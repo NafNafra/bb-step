@@ -1,7 +1,6 @@
 import Card from "../../components/Formation/index";
 import './Formation.scss'
-// import type { ReactNode } from 'react';
-
+import Button from "../../pieces/Button/ButtonSimple";
 
 const Formation = () => {
   const title: string[] = ["INFORMATIQUE BUREAUTIQUE", "ASSISTANT COMPTABLE", "ANIMATECH"];
@@ -34,6 +33,8 @@ const Formation = () => {
         {createCards()}
         {/* <Card inform={{ titre: title[0], description: "svdjhs", duree: "bdjs", place: "asbda", certificat: "sdnfs" }} /> */}
       </div>
+      <Button text="Voir toutes les formations" />
+
     </div>)
 };
 

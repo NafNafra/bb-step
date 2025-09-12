@@ -71,7 +71,7 @@ interface FormProps {
 
 
 //List: React.FC<FormationProps> = ({ text, icon, onClick }) => {
-const Form: React.FC<FormProps> = ({inform}) => { //titre, description, duree, place, certificat
+const Form: React.FC<FormProps> = ({ inform }) => { //titre, description, duree, place, certificat
 
   return (
     <div className="Form">
@@ -80,9 +80,9 @@ const Form: React.FC<FormProps> = ({inform}) => { //titre, description, duree, p
       <div className="FormationImage"></div>
       <div className="FormationInfo">
         <p>{inform.description}</p>
-          <ListIcon text={inform.duree} icon="duree" />
-          <ListIcon text={inform.place} icon="place" />
-          <ListIcon text={inform.certificat} icon="certificat" />
+        <ListIcon text={inform.duree} icon="duree" />
+        <ListIcon text={inform.place} icon="place" />
+        <ListIcon text={inform.certificat} icon="certificat" />
       </div>
       {/* <p>Veuillez reessayer!</p> */}
       <ButtonFormation text="S'inscrire maintenant" icon="fleche" />

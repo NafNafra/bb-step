@@ -21,14 +21,13 @@ const Nav: React.FC = () => {
         <li><Link to="/Formation">Formation</Link></li>
         <li><Link to="/">A propos</Link></li>
         <li><Link to="/">Contact</Link></li>
-        <li><Link to="/login">Profile</Link></li>
       </>
       <span className="Nav-profile">
         <IconButton><img className="notify" src={NotifyIcon} /></IconButton>
-        <img src={userImage} />
-        {/* <img src={icon} /> */}
+        <Link to="/login"><img src={userImage} /></Link>
+
         <img className="ham" src={HamIcon} />
-        <NavButton text="Se connecter" />
+        {/* <NavButton text="Se connecter" /> */}
       </span>
     </nav>
 
