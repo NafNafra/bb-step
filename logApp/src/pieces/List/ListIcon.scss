@@ -7,13 +7,16 @@
   &:before {
     content: '';
     display: flex;
-    background-color: red;
+    background-color: transparent;
     width: 0;
     height: 0;
-    background-image: var(--icon);
     background-size: contain;
+  }
 
-
-    //{ ['--icon' as any]: `url(${icon})` }
+  .icon {
+    margin: 0 0.5em;
+    width: 1.4em;
+    height: 2em;
+    vertical-align: middle;
   }
 }

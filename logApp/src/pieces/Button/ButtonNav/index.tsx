@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button-Nav.scss";
+import "./ButtonNav.scss";
 
 type ButtonProps = {
   text: string;
@@ -8,7 +8,7 @@ type ButtonProps = {
 
 const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
   return (
-    <button className="Button-Nav" onClick={onClick}>
+    <button className="ButtonNav" onClick={onClick}>
       {text}
     </button>
   );

@@ -1,16 +1,15 @@
-.Button-Nav {
+.ButtonNav {
   margin: 0;
   background: #0d70cc;
   color: white;
-  padding:  0.35em 0.6em;
+  padding: 0.35em 0.6em;
   width: 100%;
   border: none;
   border-radius: 0.5em;
   font-size: 0.9rem;
   font-weight: 600;
+  white-space: nowrap;
   cursor: pointer;
-
-
 
   &:hover {
     background: #5d9fe0;

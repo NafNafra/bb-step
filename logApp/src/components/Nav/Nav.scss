@@ -20,6 +20,8 @@
     }
 
     strong {
+      white-space: nowrap;
+
       margin: 0 0.5em;
       font-size: x-large;
       font-weight: 700
@@ -47,7 +49,7 @@
   .Nav-profile {
     // margin-top: -0.05em;
     @include mixin.flex-spacearound;
-    width: 16% ;
+    width: 16%;
     gap: 10%;
     // flex-shrink:2em;
     // background-color: tr;
@@ -60,5 +62,7 @@
     }
   }
 
-
+  @media screen and (max-width: 768px) {
+    background: red;
+  }
 }

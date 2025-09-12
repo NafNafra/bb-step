@@ -1,8 +1,5 @@
 import fsLogo from "../../assets/images/fs-logo.png";
 import ListIcon from "../../pieces/List";
-import { PhoneIcon } from "../../assets/icons/PhoneIcon";
-import { LocationIcon } from "../../assets/icons/LocationIcon";
-import { EmailIcon } from "../../assets/icons/EmailIcon";
 import './Footer.scss'
 
 export default function Footer() {
@@ -41,18 +38,18 @@ export default function Footer() {
       <div>
         <h3>Contact</h3>
         <ul className="contact">
-          <ListIcon>
-            <LocationIcon />
-            <span>Ivory Atsimo, Fianarantsoa</span>
-          </ListIcon>
-          <ListIcon>
-            <PhoneIcon />
-            <span>034 19 863 66</span>
-          </ListIcon>
-          <ListIcon>
-            <EmailIcon />
-            <span>fiharysoft@gmail.com</span>
-          </ListIcon>
+          <ListIcon icon="location" text="Ivory Atsimo, Fianarantsoa"/>
+            {/* <LocationIcon /> */}
+            {/* <span></span> */}
+          {/* </ListIcon> */}
+          <ListIcon icon="phone" text="034 19 863 66"/>
+            {/* <PhoneIcon /> */}
+            {/* <span></span> */}
+          {/* </ListIcon> */}
+          <ListIcon icon="email" text="fiharysoft@gmail.com"/>
+            {/* <EmailIcon /> */}
+            <span></span>
+          {/* </ListIcon> */}
         </ul>
       </div>
     </footer>

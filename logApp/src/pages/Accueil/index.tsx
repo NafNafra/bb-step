@@ -9,11 +9,11 @@ type AccueilProps = {
   children: ReactNode;
 };
 
-const Accueil: React.FC<AccueilProps> = ({ children }) => {
+const Accueil = () => {
   return (
     <div className="Accueil">
-      <Header/>
-      <Intro/>
+      <Header />
+      <Intro />
     </div>)
 };
 

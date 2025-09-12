@@ -20,15 +20,19 @@
       width: 2.5em;
       height: 2.5em;
       border-radius: 5em;
+      // margin-right: 0.5em;
     }
 
-    h3 {
-      margin-left: 1em;
+    h2 {
+      margin-left: 0.5em;
+      white-space: nowrap;
+
     }
   }
 
   div {
     width: 100%;
+
     p {
       margin-top: 0;
       margin-left: 1em;

@@ -1,0 +1,19 @@
+.Button {
+  margin: 0 auto;
+  background: var(--second-btn-color);
+  //--primary-btn-color: #53A1DF;
+  // --second-btn-color:
+  color: white;
+  padding: 0.7em 1em;
+  max-width: 29em;
+  width: 80%;
+  border: none;
+  border-radius: 1em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--primary-btn-color);
+  }
+}

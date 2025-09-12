@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Header from "../../pieces/Header/Header";
-import Accueil from "../../components/Accueil";
-// import Paragraph from "../components/Paragraph/Paragraph";
-import Users from "../Users/Users";
+import Accueil from "../Accueil/";
+import Formation from "../Formation";
 
 const Home: React.FC = () => {
   return (
-    <Accueil>
-      <Users />
-    </Accueil>
+    <>
+      <Accueil />
+    <Formation />
+    </>
   );
 };
 

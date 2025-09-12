@@ -4,15 +4,18 @@ import type { ReactNode } from 'react';
 
 
 type ListProps = {
-  children: ReactNode;
+  text: string;
   icon?: string;
   onClick?: () => void;
 };
 
-const List: React.FC<ListProps> = ({ children, icon, onClick }) => {
+const List: React.FC<ListProps> = ({ text, icon, onClick }) => {
   return (
-    <li className="ListIcon" style={{ ['--icon' as any]: `url(${icon})` }} onClick={onClick}>
-      {children}
+    <li className="ListIcon" onClick={onClick}>
+      <svg className="icon">
+        <use href={`/icon.svg#${icon}`}></use>
+      </svg>
+      <span>{text}</span>
     </li>
   );
 };

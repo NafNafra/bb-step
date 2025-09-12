@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import userImage from "../../assets/images/user-image.png";
 import fsLogo from "../../assets/images/fs-logo.png"
 import './Nav.scss';
-import IconButton from "../../pieces/Button/Button-Icon";
-import NavButton from "../../pieces/Button/Button-Nav";
-import { NotifyIcon } from "../../assets/icons/NotificyIcon";
-
+import IconButton from "../../pieces/Button/ButtonIcon";
+import NavButton from "../../pieces/Button/ButtonNav";
+import  NotifyIcon  from "../../assets/icons/NotificyIcon.svg";
+// import icon from '../../assets/icons/icon.svg';
 
 const Nav: React.FC = () => {
   return (
@@ -23,8 +23,12 @@ const Nav: React.FC = () => {
       <li><Link to="/login">Profile</Link></li>
       {/* </ul> */}
       <span className="Nav-profile">
-        <IconButton><NotifyIcon /></IconButton>
+        <IconButton><img src={NotifyIcon} /></IconButton>
         <img src={userImage} />
+        {/* <img src={icon} /> */}
+        {/* <svg className="icon">
+          <use href="/icons.svg#etudiants"></use>
+        </svg> */}
         <NavButton text="Se connecter" />
       </span>
     </nav>
