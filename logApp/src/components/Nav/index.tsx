@@ -5,7 +5,8 @@ import fsLogo from "../../assets/images/fs-logo.png"
 import './Nav.scss';
 import IconButton from "../../pieces/Button/ButtonIcon";
 import NavButton from "../../pieces/Button/ButtonNav";
-import  NotifyIcon  from "../../assets/icons/NotificyIcon.svg";
+import NotifyIcon from "../../../public/NotifyIcon.svg";
+import HamIcon from "../../../public/burger-menu-svgrepo-com.svg";
 // import icon from '../../assets/icons/icon.svg';
 
 const Nav: React.FC = () => {
@@ -15,20 +16,18 @@ const Nav: React.FC = () => {
         <img src={fsLogo} />
         <strong><b>Fihary Soft</b></strong>
       </span>
-      {/* <ul className="ul"> */}
-      <li><Link to="/">Accueil</Link></li>
-      <li><Link to="/">Formation</Link></li>
-      <li><Link to="/">A propos</Link></li>
-      <li><Link to="/">Contact</Link></li>
-      <li><Link to="/login">Profile</Link></li>
-      {/* </ul> */}
+      <>
+        <li><Link to="/">Accueil</Link></li>
+        <li><Link to="/Formation">Formation</Link></li>
+        <li><Link to="/">A propos</Link></li>
+        <li><Link to="/">Contact</Link></li>
+        <li><Link to="/login">Profile</Link></li>
+      </>
       <span className="Nav-profile">
-        <IconButton><img src={NotifyIcon} /></IconButton>
+        <IconButton><img className="notify" src={NotifyIcon} /></IconButton>
         <img src={userImage} />
         {/* <img src={icon} /> */}
-        {/* <svg className="icon">
-          <use href="/icons.svg#etudiants"></use>
-        </svg> */}
+        <img className="ham" src={HamIcon} />
         <NavButton text="Se connecter" />
       </span>
     </nav>

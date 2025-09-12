@@ -23,7 +23,7 @@
       white-space: nowrap;
 
       margin: 0 0.5em;
-      font-size: x-large;
+      font-size: large;
       font-weight: 700
     }
   }
@@ -59,10 +59,40 @@
       height: 2em;
       border-radius: 5em;
 
+      &.notify,
+      &.ham {
+        width: 1.2em;
+        // height: 2em;
+        border-radius: 5em;
+        margin-left: 0.5em;
+      }
+
+      &.ham {
+        display: none;
+
+        @media screen and (max-width: 76em) {display: flex;}
+      }
+
+
+
     }
   }
 
-  @media screen and (max-width: 768px) {
-    background: red;
+
+  @media screen and (max-width: 76em) {
+
+    img.ham {
+      display: none;
+    }
+
+    li {
+      display: none;
+    }
+
+    .Nav {
+      justify-content: space-between;
+    }
+
+    // background: red;
   }
 }

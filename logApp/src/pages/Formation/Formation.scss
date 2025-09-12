@@ -1,14 +1,41 @@
-.Form{
+.Formation {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   flex-direction: column;
-  background: white;
-  width: 100%;
+  background: #eee;
+  width: auto;
   height: auto;
   margin-top: 0em;
   padding: 2em 1em;
-  border: 0.1em solid #aaa;
-  
+
+  // border: 0.1em solid #aaa;
+  .FIntro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 2em 0;
+
+    h2 {
+
+      &,
+      +p {
+        text-align: center;
+        width: 70%;
+        margin: 0.2em;
+      }
+    }
+  }
+
+  .FDetails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    width: 100%;
+    // gap: 4%;
+  }
 }

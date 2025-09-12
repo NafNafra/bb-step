@@ -55,21 +55,34 @@
 import React, { useState } from "react";
 import ButtonFormation from "../../pieces/Button/ButtonFormation";
 import "./Form.scss";
-// import animatech from '../../assets/images/animatech.png'
 import ListIcon from '../../pieces/List/index'
 
-const Form: React.FC = () => {
+interface FormDetail {
+  titre: string;
+  description: string;
+  duree: string;
+  place: string;
+  certificat: string;
+}
+
+interface FormProps {
+  inform: FormDetail;
+}
+
+
+//List: React.FC<FormationProps> = ({ text, icon, onClick }) => {
+const Form: React.FC<FormProps> = ({inform}) => { //titre, description, duree, place, certificat
 
   return (
     <div className="Form">
 
-      <h3>INFORMATIQUE BUREAUTIQUE</h3>
+      <h3>{inform.titre}</h3>
       <div className="FormationImage"></div>
       <div className="FormationInfo">
-        <p>Initiation en Informatique, utilisation d'internet, ex......</p>
-          <ListIcon text="1 mois" icon="duree" />
-          <ListIcon text="Max 50 etudiants" icon="place" />
-          <ListIcon text="Certifiante" icon="certificat" />
+        <p>{inform.description}</p>
+          <ListIcon text={inform.duree} icon="duree" />
+          <ListIcon text={inform.place} icon="place" />
+          <ListIcon text={inform.certificat} icon="certificat" />
       </div>
       {/* <p>Veuillez reessayer!</p> */}
       <ButtonFormation text="S'inscrire maintenant" icon="fleche" />

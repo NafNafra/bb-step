@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Login from "./components/Modal/LoginModal/Login";
-import Users from "./pages/Users";
+import Formation from "./pages/Formation";
 import Layout from "./components/Layout/Layout";
 
 const App: React.FC = () => {
@@ -11,7 +11,7 @@ const App: React.FC = () => {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/users" element={<Users />} />
+          <Route path="/Formation" element={<Formation />} />
 
         </Route>
       </Routes>
