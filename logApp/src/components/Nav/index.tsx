@@ -4,10 +4,6 @@ import userImage from "../../assets/images/user-image.png";
 import fsLogo from "../../assets/images/fs-logo.png"
 import './Nav.scss';
 import IconButton from "../../pieces/Button/ButtonIcon";
-import NavButton from "../../pieces/Button/ButtonNav";
-import NotifyIcon from "../../../public/NotifyIcon.svg";
-import HamIcon from "../../../public/burger-menu-svgrepo-com.svg";
-// import icon from '../../assets/icons/icon.svg';
 
 const Nav: React.FC = () => {
   return (
@@ -18,16 +14,14 @@ const Nav: React.FC = () => {
       </span>
       <>
         <li><Link to="/">Accueil</Link></li>
-        <li><Link to="/Formation">Formation</Link></li>
-        <li><Link to="/">A propos</Link></li>
-        <li><Link to="/">Contact</Link></li>
+        <li><Link to="/formation">Formation</Link></li>
+        <li><Link to="/apropos">A propos</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
       </>
       <span className="Nav-profile">
-        <IconButton><img className="notify" src={NotifyIcon} /></IconButton>
+        <IconButton classes="" icon="notify"/>
         <Link to="/login"><img src={userImage} /></Link>
-
-        <img className="ham" src={HamIcon} />
-        {/* <NavButton text="Se connecter" /> */}
+        <IconButton classes="ham" icon="ham"/>
       </span>
     </nav>
 

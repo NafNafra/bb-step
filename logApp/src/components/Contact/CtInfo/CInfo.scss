@@ -1,0 +1,45 @@
+.CInfo {
+  border-radius: 1em;
+  background-color: #fff;
+  box-shadow: 0 0 0.2em rgb(225, 226, 226);
+  max-width: 95%;
+  margin: 2em 0;
+  padding: 0.2em;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+
+  .CIIcon {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 1em;
+    padding: 0.5em;
+    background-color: #4CB3F7;
+    border-radius: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      width: 2em;
+      height: 2em;
+      background-image: url('../../../assets/icons/location.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: transparent;
+      border: 0;
+    }
+  }
+  .CIDetails{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    h3,p{
+      margin: 0 0;
+      // width: 90%;
+    }
+  }
+
+
+}

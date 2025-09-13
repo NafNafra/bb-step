@@ -1,13 +1,14 @@
 @use '../../styles/variables';
-
-.Input {
-  width: 70%;
+ 
+.TextArea {
+  width: 87%;
+  height: 5em;
   padding: 0.5em;
-  font-size: 1em;
+  font-size: 1.3em;
   border: 0.1em solid variables.$background-color;
   border-radius: 0.5em;
   outline: none;
-  margin: 0.5em 5%;
+  margin: 0.5em 5% 1em;
   background-color: #fff;
   color: variables.$primary-color;
 

@@ -1,5 +1,5 @@
 .Button {
-  display: flex;
+  // display: flex;
   margin: 0 auto;
   background: var(--second-btn-color);
   align-items: center;
@@ -7,8 +7,9 @@
   // --second-btn-color:
   color: white;
   padding: 0.7em 1em;
-  max-width: 29em;
+  // max-width: 29em;
   width: fit-content;
+  text-align: center;
   border: none;
   border-radius: 0.5em;
   font-size: 1rem;

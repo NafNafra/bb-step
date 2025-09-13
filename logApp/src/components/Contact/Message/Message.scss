@@ -1,0 +1,20 @@
+.Message {
+  background-color: #F1F3F9;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 35%;
+  // margin: 0 1em;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0 0.5em rgb(251, 253, 255);
+
+  h3 {
+    margin: 0.5em 2em;
+  }
+
+  button {
+    width: 90%;
+    text-align: center;
+  }
+}

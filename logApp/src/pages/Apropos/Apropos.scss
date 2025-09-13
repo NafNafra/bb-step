@@ -1,3 +1,98 @@
-.Apropos{
+.Apropos {
   background-color: #F1F7FE;
+  width: 100%;
+  min-height: 40em;
+  margin-top: 0em;
+  padding-bottom: 2em;
+
+
+
+  .AproposIntro {
+    width: 41%;
+    display: flex;
+    justify-content: flex-start;
+    // align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+    padding: 0em 2em;
+
+    h1,
+    p {
+      margin: 0.5em 0;
+    }
+
+  }
+
+  .AproposContent {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 0em;
+    padding: 0 2em;
+    gap: 4em;
+
+    .AproposFormation {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+
+      h2 {
+        margin: 0;
+        margin-top: 0.5em;
+      }
+
+      p {
+        margin: 0;
+        margin-left: 0.5em;
+        margin-bottom: 0.8em;
+      }
+    }
+
+  }
+
+  .AproposChoisir {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    width: 60%;
+    gap: 2em;
+
+    .AproposChoix {
+      width: 17em;
+      height: 14em;
+      padding: 1.5em;
+      border-radius: 0.5em;
+      box-shadow: 0 0 0.1em #344054;
+      background-color: #6F8CC7;
+      color: #FFF;
+
+      button {
+        width: 100%;
+        padding: 0 auto;
+        .icon {
+          width: 1.5em;
+          height: 1.5em;
+          background-color: #fff;
+          border-radius: 5em;
+          padding: 0.8em;
+          margin: 0;
+        }
+
+      }
+
+      h3 {
+        margin: 0.5em auto;
+        text-align: center;
+      }
+
+      p {
+        margin: 0 auto;
+        width: 15em;
+
+      }
+    }
+
+  }
 }
